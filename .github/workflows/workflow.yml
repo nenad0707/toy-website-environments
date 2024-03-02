@@ -12,6 +12,8 @@ permissions:
   contents: read
 
 jobs:
+  run login:
+    run: az login
   # Lint the Bicep file.
   lint:
     uses: ./.github/workflows/lint.yml
